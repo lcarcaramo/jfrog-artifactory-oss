@@ -3,9 +3,9 @@ services:
   - docker
 env:
   global:
-    - TEST_DIR="$PWD/s390x/test"
+    - TEST_DIR="$PWD"
     - TEST_SCRIPT="test.sh"
-    - BUILD_DIR="$PWD/s390x"
+    - BUILD_DIR="$PWD"
     - REPO="quay.io/ibmz/jfrog-artifactory-oss"
     - TAG="$REPO:6.23.3"
 before_script: 
