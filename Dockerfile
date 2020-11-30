@@ -12,7 +12,7 @@ RUN add-apt-repository \
    stable"
 
 ENV DOCKER_VERSION=18.06.0
-ENV ARTIFACTORY_VERSION=<version>
+ENV ARTIFACTORY_VERSION=6.23.3
 RUN apt-get --assume-yes install docker-ce=${DOCKER_VERSION}~ce~3-0~ubuntu
 
 # Update settings as described by read me https://bintray.com/jfrog/artifactory/jfrog-artifactory-oss-zip/6.19.1#read
