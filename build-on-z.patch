@@ -1,0 +1,26 @@
+--- Dockerfile.artifactory 2020-04-28 17:00:47.270197453 +0000
++++ Dockerfile.artifactory      2020-04-28 16:52:02.100197453 +0000
+@@ -1,9 +1,13 @@
+-FROM docker.bintray.io/jfrog/distroless/base/artifactory-java:adoptopenjdk11-20
++FROM quay.io/ibmz/openjdk:11.0.8
+
+ LABEL maintainer devops@jfrog.com
+
+ USER root
+
++RUN useradd -ms /bin/bash artifactory
++
++RUN apt-get update && apt-get install -y unzip
++
+ # Set vars
+ ARG ARTIFACTORY_VERSION
+ ENV ARTIFACTORY_USER_NAME=artifactory \
+@@ -44,7 +48,7 @@
+     chmod -R 777 ${ARTIFACTORY_HOME}/tomcat/work ${ARTIFACTORY_HOME}/tomcat/temp ${ARTIFACTORY_HOME}/tomcat/webapps && \
+     chmod -R go+w ${ARTIFACTORY_HOME} ${ARTIFACTORY_HOME}/bin ${ARTIFACTORY_HOME}/tomcat/conf && \
+     chmod +x ${ARTIFACTORY_HOME}/bin/*.sh ${ARTIFACTORY_HOME}/tomcat/bin/*.sh /entrypoint-artifactory.sh && \
+-    chmod o+w $(dirname $(readlink $(which java)))/../lib/security/cacerts
++    chmod o+w /usr/lib/jvm/java-11-openjdk-s390x/lib/security/cacerts
+
+ # Add the PostgreSQL driver
+ COPY postgresql-${POSTGRESQL_VERSION}.jar ${ARTIFACTORY_HOME}/tomcat/lib/postgresql-${POSTGRESQL_VERSION}.jar
