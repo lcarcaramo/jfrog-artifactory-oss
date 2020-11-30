@@ -30,4 +30,4 @@ RUN patch < build-on-z.patch
 WORKDIR /jfrog/distribution/docker/
 
 # Entrypoint, use CMD so you can override to debug
-CMD  mvn clean package -Pdocker
+CMD  mvn clean package -X -Pdocker
