@@ -1,0 +1,20 @@
+arch: s390x
+services:
+  - docker
+env:
+  global:
+    - TEST_DIR="$PWD/s390x/test"
+    - TEST_SCRIPT="test.sh"
+    - BUILD_DIR="$PWD/s390x"
+    - REPO="quay.io/ibmz/jfrog-artifactory-oss"
+    - TAG="$REPO:6.23.3"
+before_script: 
+  - cd $TEST_DIR && chmod +x $TEST_SCRIPT
+  - docker login quay.io -u $ROBOT -p $ROBOT_TOKEN
+script: 
+  - docker build . --tag artifactory-builder
+  - docker run --rm -v /var/run/docker.sock:/var/run/docker.sock:ro artifactory-builder
+  - docker image tag jfrog/artifactory-oss:6.23.3 $TAG
+  - cd $TEST_DIR && bash $TEST_SCRIPT 
+after_script:
+  - docker push $REPO
