@@ -2,7 +2,7 @@
 > _Built from [`quay.io/ibmz/openjdk:11.0.8`](https://quay.io/repository/ibmz/openjdk?tab=info)_
 -	[`6.23.3`](https://github.com/lcarcaramo/jfrog-artifactory-oss/blob/main/Dockerfile) - [![Build Status](https://travis-ci.com/lcarcaramo/jfrog-artifactory-oss.svg?branch=main)](https://travis-ci.com/lcarcaramo/jfrog-artifactory-oss)
 
-# What is JFrog Artifactory OSS
+# What is JFrog Artifactory OSS?
 
 JFrog Artifactory OSS is an open source variant JFrog Artifactory. JFrog Artifactory is binary repository, and as a binary repository, Artifactory is optimized for storing binaries and large objects. Artifactory is useful for a number of DevOps use cases including, but not limited to being used as a place to store build artfacts, and being used to store binaries that are frequently accessed.
 
