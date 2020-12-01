@@ -10,11 +10,11 @@ JFrog Artifactory OSS is an open source variant JFrog Artifactory. JFrog Artifac
 
 # How to use this image
 
-* Start a `quay.io/ibmz/jfrog-artifactory-oss:6.23.3` container with port 8081 exposed so that we can interact with Artifactory.
+* Start a `quay.io/ibmz/jfrog-artifactory-oss:6.23.3` container with port 8081 exposed so that you can interact with Artifactory.
 ```console
 $ docker run --name artifactory -p 8081:8081 -d quay.io/ibmz/jfrog-artifactory-oss:6.23.3
 ```
-* After waiting a minute for Artifactory to be ready, open the Artifactory UI from a web browser. If you are able to access the Artifactory web UI, and it is working properly, that is an indication that Artifactory is working properly.
+* After waiting a minute for Artifactory to be ready, open the Artifactory UI from a web browser. If you are able to access the Artifactory web UI, that is an indication that Artifactory is working properly.
   * `http://<host/ip where artifactory is running>:8081/artifactory/webapp/#/home`
   
 * More information about using [Artifactory on zCX]() _(Currently unavailable)_
