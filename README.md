@@ -6,7 +6,7 @@
 
 ![JFrog Logo](https://media.jfrog.com/wp-content/uploads/2019/11/20130211/artifactory-product-logo-1.png.webp)
 
-JFrog Artifactory OSS is an open source variant of JFrog Artifactory. JFrog Artifactory is binary repository, and as a binary repository, Artifactory is optimized for storing binaries and large objects. Artifactory is useful for a number of DevOps use cases including, but not limited to being used as a place to store build artfacts, and being used to store binaries that are frequently accessed.
+JFrog Artifactory OSS is an open source variant of JFrog Artifactory. JFrog Artifactory is a binary repository, and as a binary repository, Artifactory is optimized for storing binaries and large objects. Artifactory is useful for a number of DevOps use cases including, but not limited to being used as a place to store build artfacts, and being used to store binaries that are frequently accessed.
 
 # How to use this image
 
