@@ -6,7 +6,7 @@
 
 ![JFrog Logo](https://media.jfrog.com/wp-content/uploads/2019/11/20130211/artifactory-product-logo-1.png.webp)
 
-JFrog Artifactory OSS is an open source variant of JFrog Artifactory. JFrog Artifactory is a binary repository, and as a binary repository, Artifactory is optimized for storing binaries and large objects. Artifactory is useful for a number of DevOps use cases including, but not limited to being used as a place to store build artfacts, and being used to store binaries that are frequently accessed.
+JFrog Artifactory OSS is an open source variant of JFrog Artifactory. JFrog Artifactory is a binary repository, and as a binary repository, Artifactory is optimized for storing binaries and large objects. Artifactory is useful for a number of DevOps use cases including, but not limited to being used as a place to store build artifacts, and being used to store binaries that are frequently accessed.
 
 # How to use this image
 
@@ -18,10 +18,10 @@ $ docker run --name artifactory -p 8081:8081 -d quay.io/ibmz/jfrog-artifactory-o
 
 `http://<host/ip where artifactory is running>:8081/artifactory/webapp/#/home`
 
-* More information about using [Artifactory on zCX]() _(Currently unavailable)_
+* More information about using [Artifactory on zCX](). _(Currently unavailable)_
 
 # License
 
-JFrog Artifactory is licensed under [AGPL 3.0](https://www.gnu.org/licenses/agpl-3.0.html)
+JFrog Artifactory is licensed under [AGPL 3.0](https://www.gnu.org/licenses/agpl-3.0.html).
 
 [Source Code](https://bintray.com/jfrog/artifactory/jfrog-artifactory-oss-zip)
