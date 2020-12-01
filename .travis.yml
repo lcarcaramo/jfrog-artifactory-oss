@@ -12,6 +12,7 @@ before_script:
   - cd $TEST_DIR && chmod +x $TEST_SCRIPT
   - docker login quay.io -u $ROBOT -p $ROBOT_TOKEN
 script: 
+  - cd $BUILD_DIR
   - docker build . --tag artifactory-builder
   - docker run --rm -v /var/run/docker.sock:/var/run/docker.sock:ro artifactory-builder
   - docker image tag jfrog/artifactory-oss:6.23.3 $TAG
