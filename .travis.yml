@@ -3,7 +3,7 @@ services:
   - docker
 env:
   global:
-    - TEST_DIR="$PWD"
+    - TEST_DIR="$PWD/test"
     - TEST_SCRIPT="test.sh"
     - BUILD_DIR="$PWD"
     - REPO="quay.io/ibmz/jfrog-artifactory-oss"
