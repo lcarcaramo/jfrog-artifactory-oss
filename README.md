@@ -1,6 +1,8 @@
 # Tags
-> _Built from [`quay.io/ibmz/openjdk:11.0.8`](https://quay.io/repository/ibmz/openjdk?tab=info)_
--	[`6.23.3`](https://github.com/lcarcaramo/jfrog-artifactory-oss/blob/main/Dockerfile) - [![Build Status](https://travis-ci.com/lcarcaramo/jfrog-artifactory-oss.svg?branch=main)](https://travis-ci.com/lcarcaramo/jfrog-artifactory-oss)
+> _Built from [`quay.io/ibm/openjdk:11.0.8`](https://quay.io/repository/ibm/openjdk?tab=info)_
+-	`6.23.3` - [![Build Status](https://travis-ci.com/lcarcaramo/jfrog-artifactory-oss.svg?branch=main)](https://travis-ci.com/lcarcaramo/jfrog-artifactory-oss)
+
+### __[Original Source Code](https://bintray.com/jfrog/artifactory/jfrog-artifactory-oss-zip)__
 
 # What is JFrog Artifactory OSS?
 
@@ -10,9 +12,9 @@ JFrog Artifactory OSS is an open source variant of JFrog Artifactory. JFrog Arti
 
 # How to use this image
 
-* Start a `quay.io/ibmz/jfrog-artifactory-oss:6.23.3` container with port 8081 exposed so that you can interact with Artifactory.
+* Start a `quay.io/ibm/jfrog-artifactory-oss:6.23.3` container with port 8081 exposed so that you can interact with Artifactory.
 ```console
-$ docker run --name artifactory -p 8081:8081 -d quay.io/ibmz/jfrog-artifactory-oss:6.23.3
+$ docker run --name artifactory -p 8081:8081 -d quay.io/ibm/jfrog-artifactory-oss:6.23.3
 ```
 * After waiting a minute for Artifactory to be ready, open the Artifactory UI from a web browser. If you are able to access the Artifactory web UI, that is an indication that Artifactory is working properly.
 
@@ -23,5 +25,3 @@ $ docker run --name artifactory -p 8081:8081 -d quay.io/ibmz/jfrog-artifactory-o
 # License
 
 JFrog Artifactory is licensed under [AGPL 3.0](https://www.gnu.org/licenses/agpl-3.0.html).
-
-[Source Code](https://bintray.com/jfrog/artifactory/jfrog-artifactory-oss-zip)
